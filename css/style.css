@@ -5,8 +5,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
+  /* temporary */
+  border: 10px solid red;
+  background-color: black;
+  color: lightslategrey;
 }
 
 h1,
@@ -20,4 +25,94 @@ h6 {
 
 p {
   margin: 0;
+}
+
+header {
+  /* temporary */
+  border: 5px solid blue;
+}
+
+header img {
+  width: 200px;
+  border-radius: 100px;
+  /* temporary */
+  border: 5px solid blue;
+}
+
+header h1 {
+  /* temporary */
+  border: 5px solid blue;
+}
+
+header ul {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  /* temporary */
+  border: 5px solid blue;
+}
+
+header a:visited {
+  /* temporary */
+  color: darkslategray;
+}
+
+header a:hover {
+  /* temporary */
+  color: goldenrod;
+}
+
+.portfolio-wrapper {
+  /* temporary */
+  border: 5px solid greenyellow;
+}
+
+#about {
+  /* temporary */
+  border: 5px solid magenta;
+}
+
+#projects {
+  /* temporary */
+  border: 5px solid skyblue;
+}
+
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.project-card {
+  /* temporary */
+  border: 5px solid yellow;
+}
+
+.project-card img {
+  width: 200px;
+}
+
+#contacts {
+  /* temporary */
+  border: 5px solid brown;
+}
+
+#contacts ul {
+  list-style: none;
+}
+
+#contacts a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  /* temporary */
+  border: 5px solid orange;
+}
+
+@media screen {
 }

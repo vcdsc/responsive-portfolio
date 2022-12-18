@@ -5,41 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Vanessa Correia</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <!-- main logo / nav -->
+  <!-- header / logo / name / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <img src="/css/assets/vcdsc.png" alt="woman siting at a desk, facing a computer">
+    <h1>Vanessa Correia</h1>
     <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
     </nav>
   </header>
-
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+  <main class="portfolio-wrapper">
+    <!-- about -->
+    <section class="section" id="about">
+      <h2>About</h2>
+      <div>
+        <p>A few descriptive lines about the person who made this.</p>
+      </div>
     </section>
-
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <!-- projects -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-row">
+        <figure class="project-card">
+          <h3>Project 1</h3>
+          <img src="/css/assets/project-placeholder.png" alt="">
+        </figure>
+        <figure class="project-card">
+          <h3>Project 2</h3>
+          <img src="/css/assets/project-placeholder.png" alt="">
+        </figure>
+        <figure class="project-card">
+          <h3>Project 3</h3>
+          <img src="/css/assets/project-placeholder.png" alt="">
+        </figure>
+      </div>
     </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <!-- contacts -->
+    <section class="section" id="contacts">
+      <h2>Contacts</h2>
+      <div>
+        <ul>
+          <li><a href="#" class="fa fa-github"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+        </ul>
+      </div>
     </section>
   </main>
+  <footer>
+    <h3>&copy; Vanessa Correia</h3>
+  </footer>
 </body>
 
 </html>
