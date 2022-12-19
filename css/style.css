@@ -1,4 +1,10 @@
-* {
+:root {
+  --main-text-color: lightslategrey;
+  --links: goldenrod;
+  --link-visited: teal;
+}
+
+.logo {
   box-sizing: border-box;
 }
 
@@ -8,10 +14,8 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
-  /* temporary */
-  border: 10px solid red;
   background-color: black;
-  color: lightslategrey;
+  color: var(--main-text-color);
 }
 
 h1,
@@ -27,56 +31,69 @@ p {
   margin: 0;
 }
 
-header {
-  /* temporary */
-  border: 5px solid blue;
-}
-
-header img {
-  width: 200px;
-  border-radius: 100px;
-  /* temporary */
-  border: 5px solid blue;
-}
-
-header h1 {
-  /* temporary */
-  border: 5px solid blue;
-}
-
-header ul {
+ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-header a {
+a {
   text-decoration: none;
-  /* temporary */
-  border: 5px solid blue;
+  color: var(--links);
 }
 
-header a:visited {
-  /* temporary */
-  color: darkslategray;
+a:visited {
+  color: var(--link-visited);
 }
 
-header a:hover {
-  /* temporary */
-  color: goldenrod;
+a:hover {
+  color: var(--links);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav h1 {
+  float: left;
+  display: block;
+  color: var(--main-text-color);
+  text-align: center;
+  padding: 28px 28px;
+  text-decoration: none;
+}
+
+nav a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 32px 28px;
+  text-decoration: none;
 }
 
 .portfolio-wrapper {
-  /* temporary */
-  border: 5px solid greenyellow;
+  margin-top: 50px;
 }
 
 #about {
-  /* temporary */
-  border: 5px solid magenta;
 }
 
 #projects {
-  /* temporary */
-  border: 5px solid skyblue;
+}
+
+.project-card {
 }
 
 .project-row {
@@ -87,8 +104,6 @@ header a:hover {
 }
 
 .project-card {
-  /* temporary */
-  border: 5px solid yellow;
 }
 
 .project-card img {
@@ -96,22 +111,16 @@ header a:hover {
 }
 
 #contacts {
-  /* temporary */
-  border: 5px solid brown;
-}
-
-#contacts ul {
-  list-style: none;
-}
-
-#contacts a {
-  text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 footer {
   text-align: center;
-  /* temporary */
-  border: 5px solid orange;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #333;
+  width: 100%;
 }
 
 @media screen {
